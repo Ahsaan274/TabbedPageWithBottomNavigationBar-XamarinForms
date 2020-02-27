@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:views="clr-namespace:BottomNavigationBarTabPage.Views"
+            xmlns:views1="clr-namespace:Tabbed.Views"
+            mc:Ignorable="d"
+            x:Class="Tabbed.TabbedPage1"
+            Title="abc"
+            >
+
+    <TabbedPage.Children>
+        <NavigationPage Title="Favorites" Icon="ic_favorites.png">
+            <x:Arguments>
+                <views:Page1 />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Friends" Icon="ic_friends.png">
+            <x:Arguments>
+                <views:Page2 />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Nearby" Icon="ic_nearby.png">
+            <x:Arguments>
+                <views:Page3 />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Recents" Icon="ic_recents.png">
+            <x:Arguments>
+                <views1:Page4 />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Restaurants" Icon="ic_restaurants.png">
+            <x:Arguments>
+                <views1:Page5 />
+            </x:Arguments>
+        </NavigationPage>
+    </TabbedPage.Children>
+</TabbedPage>
